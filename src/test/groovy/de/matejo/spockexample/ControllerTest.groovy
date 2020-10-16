@@ -6,6 +6,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.http.HttpStatus
 import org.springframework.test.web.servlet.MockMvc
 import spock.lang.Specification
+import spock.lang.Unroll
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 
@@ -28,6 +29,7 @@ class ControllerTest extends Specification {
         response.getContentAsString() == "hello"
     }
 
+    @Unroll
     def "say hello to #givenName"() {
         when: "url with name is called"
         def response = mockMvc.perform(get("/hello/$givenName")).andReturn().response

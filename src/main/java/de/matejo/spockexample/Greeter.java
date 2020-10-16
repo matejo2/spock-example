@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class Greeter {
 
     public String sayHelloTo(String name) {
-        return null;
+        return "hello " + name;
     }
 }
