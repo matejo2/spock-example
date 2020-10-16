@@ -10,6 +10,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import spock.lang.Ignore
 import spock.lang.Specification
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
+
 @WebMvcTest
 class ControllerTest extends Specification {
 
@@ -18,4 +20,11 @@ class ControllerTest extends Specification {
 
     def objectMapper = new ObjectMapper()
 
+    def "say hello"() {
+        when: "uri is called"
+        def response = mockMvc.perform(get("/hello")).andReturn().response
+
+        then: "status code is 200 OK"
+        response.status == HttpStatus.OK.value()
+    }
 }
