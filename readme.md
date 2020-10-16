@@ -18,7 +18,7 @@ For using spock you hae to add two dependencies, spock-core and spock-spring (if
 
 and for using groovy you need to add the gmaven plus plugin
 
-```
+```xml
 <plugin>
 <groupId>org.codehaus.gmavenplus</groupId>
 <artifactId>gmavenplus-plugin</artifactId>
