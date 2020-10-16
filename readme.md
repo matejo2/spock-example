@@ -1,7 +1,7 @@
 # spock-example
 a super simple spock implementation with spring framework
 
-For using spock you hae to add two dependencies, spock-core and spock-spring (if you are using it in the spring context)
+For using spock you have to add two dependencies, spock-core and spock-spring (if you are using it in the spring context)
 
 ```xml
 <dependency>
