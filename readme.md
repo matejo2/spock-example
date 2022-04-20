@@ -13,12 +13,12 @@ For using spock you have to add two dependencies, spock-core and spock-spring (i
 <dependency>
 	<groupId>org.spockframework</groupId>
 	<artifactId>spock-core</artifactId>
-	<version>1.3-groovy-2.5</version>
+	<version>2.2-M1-groovy-4.0</version>
 </dependency>
 <dependency>
 	<groupId>org.spockframework</groupId>
 	<artifactId>spock-spring</artifactId>
-	<version>1.3-groovy-2.5</version>
+	<version>2.2-M1-groovy-4.0</version>
 </dependency>
 ```
 
